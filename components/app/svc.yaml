@@ -14,10 +14,9 @@ kind: Service
 metadata:
   name: udp-svc
   annotations:
-    metallb.universe.tf/address-pool: first-pool
+    metallb.universe.tf/loadBalancerIPs: 192.168.20.6
 spec:
   type: LoadBalancer
-  loadBalancerIp: 192.168.20.6
   ports:
     - name: wireguard
       port: 51820
