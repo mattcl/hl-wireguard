@@ -16,6 +16,6 @@ spec:
       priority: 10
       services:
         - name: wireguard-svc
-          port: dashboard
+          port: 80
   tls:
     certResolver: default
