@@ -17,7 +17,7 @@ metadata:
     metallb.universe.tf/address-pool: first-pool
 spec:
   type: LoadBalancer
-  loadBalancerIp: 192.168.20.3
+  loadBalancerIp: 192.168.20.6
   ports:
     - name: wireguard
       port: 51820
