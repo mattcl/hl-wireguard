@@ -4,15 +4,15 @@ kind: IngressRoute
 metadata:
   name: ingress
   annotations:
-    kubernetes.io/ingress.class: traefik-external
+    kubernetes.io/ingress.class: traefik-internal
   labels:
-    traffic-type: external
+    traffic-type: internal
 spec:
   entryPoints:
     - websecure
   routes:
     - kind: Rule
-      match: Host(`vpn.ancalagon.black`)
+      match: Host(`vpn.hl.ancalagon.black`)
       priority: 10
       services:
         - name: wireguard-svc
